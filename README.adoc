@@ -15,5 +15,6 @@ This project is from the Lynda course https://www.lynda.com/course-tutorials/Web
 == How to build (incremental changes)
 
 Inside the docker container, which you can leave running...
+
 1. cd /usr/src/cppweb/hello_crow/build
 1. make && ./hello_crow
