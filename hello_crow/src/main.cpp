@@ -7,7 +7,7 @@ using namespace std;
 int main(int argc, char *argv[]) {
     crow::SimpleApp app;
 
-    app.loglevel(crow::LogLevel::Debug);
+    app.loglevel(crow::LogLevel::Info);
 
     CROW_ROUTE(app, "/")
             ([]() {

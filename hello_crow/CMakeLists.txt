@@ -9,5 +9,7 @@ find_package(Boost COMPONENTS system filesystem REQUIRED)
 find_package(Threads)
 
 include_directories(${Boost_INCLUDE_DIRS})
-add_executable(hello_crow main.cpp)
+add_executable(hello_crow src/main.cpp)
 target_link_libraries(hello_crow ${Boost_LIBRARIES} Threads::Threads)
+
+add_subdirectory(test)
