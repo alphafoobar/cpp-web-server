@@ -1,0 +1,19 @@
+= CPP Web service
+
+This project is from the Lynda course https://www.lynda.com/course-tutorials/Web-Servers-APIs-using-C/713387-2.html[Web Servers and APIs using C++ with Troy Miles]
+
+== How to build (first time)
+
+1. Build the docker container
+1. cd cppbox
+1. docker build -t cppbox .
+1. Run the docker image
+1. cd /usr/src/cppweb/hello_crow/build
+1. cmake ..
+1. make && ./hello_crow
+
+== How to build (incremental changes)
+
+Inside the docker container, which you can leave running...
+1. cd /usr/src/cppweb/hello_crow/build
+1. make && ./hello_crow
