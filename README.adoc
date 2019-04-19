@@ -8,6 +8,7 @@ This project is from the Lynda course https://www.lynda.com/course-tutorials/Web
 1. cd cppbox
 1. docker build -t cppbox .
 1. Run the docker image
+    ````
 1. cd /usr/src/cppweb/hello_crow/build
 1. cmake ..
 1. make && ./hello_crow

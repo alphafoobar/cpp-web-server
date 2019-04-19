@@ -44,5 +44,4 @@ CTestTestfile.cmake
 *.app
 
 .idea/
-cppbox/
 hello_crow/build/

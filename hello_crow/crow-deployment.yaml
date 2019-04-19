@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: crow-deployment
+  labels:
+    app: crow
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: crow
+  template:
+    metadata:
+      labels:
+        app: crow
+    spec:
+      containers:
+        - name: crow
+          image: hello_crow:latest
+          ports:
+            - containerPort: 18080
